@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Itunes Movies</title>
+	<link rel="stylesheet" href="./style/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="scripts/jslots.js" charset="utf-8"></script>
+	<script src="./scripts/script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<section class="genres">
+			<h1>What should I watch Tonight?</h1>
+			
+			<form action="">
+				<label for="comedy">Make Me Laugh</label>
+				<input type="radio" id="comedy" name="genre" data-genre="4404">
+				
+				<label for="action">Explosions and Cool Stuff</label>
+				<input id="action" name="genre" type="radio" data-genre="4401" value="4401">
+				
+				<label for="documentary">Docs</label>
+				<input id="documentary" name="genre" type="radio" data-genre="4405" value="4405">
+
+				<label for="musicals">Sing Along</label>
+				<input id="musicals" name="genre" type="radio" data-genre="4411" value="4411">
+
+				<label for="romance">Date Night With Bae</label>
+				<input id="romance" name="genre" type="radio" data-genre="4412" value="4412">
+
+				<label for="scifi">Do aliens exist? The truth is out there.</label>
+				<input id="scifi" name="genre" type="radio" data-genre="4413" value="4413">
+
+				<input class="spinBtn" type="submit" id="playBtn" value="Spin!">
+			</form>
+		</section>
+	</div>
+
+	<!--SLOT MACHINE -->
+	<section class="results">
+		<div class="slotMachineContainer wrapper">
+			<div class="jSlots-wrapper" id="slotMachine">
+				<ul id="app" class="slot">  
+				    <li>Big</li>  
+					<li>A League of Their Own</li>  
+				    <li>Guardians of the Galaxy</li>  
+				    <li>Sixth Sense</li>  
+				    <li>The Avengers</li>  
+				    <li>Goodfellas</li>  
+				    <li>Jaws</li> 
+				</ul>  
+				</div>
+
+				<div class="movieInfo">
+				<!--
+				<p> for movie description
+				<img> for movie poster
+				-->
+				</div>
+
+				<button>
+					<a href="index.html">Spin Again!</a>
+				</button>
+			</div>
+
+	</section>
+
+
+
+</body>
+</html>
+

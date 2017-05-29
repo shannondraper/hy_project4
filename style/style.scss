@@ -1,0 +1,177 @@
+@import "partials/setup";
+
+body {
+  background-color: #52CBEF;
+  background-image: url(../assets/movieIcons.png);
+}
+img {
+  max-width: 100%;
+
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.genres {
+  height: 100vh;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  // margin: 5%;
+}
+input[type="radio"] {
+    display: none;
+}
+label {
+  padding: 60px 10px;
+  background-color: #FF623F;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: inset 0px -6px 0px #C14016, -1px 1px 8px #333;
+  width: 30%;
+  margin:10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label:hover {
+  background: radial-gradient(ellipse at center, rgba(255,98,63,1) 0%,rgba(193,64,22,1) 81%);
+  box-shadow: inset 0px -6px 0px #7c270d; 
+}
+.selected {
+  background: linear-gradient(to bottom, rgba(193,64,22,1) 0%,rgba(255,98,63,1) 100%);
+  box-shadow:inset 0 6px 8px #6d2612;
+}
+.spinBtn {
+  padding: 20px 10px;
+  background-color: #00b774;
+  border: 0;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: inset 0px -6px 0px #008252;
+  width: 50%;
+  margin:10px 0;
+  font-size: 25px;
+  &:hover {
+    box-shadow: inset 0px -6px 0px #008252, 5px 5px 10px #6af2c0, -5px -5px 10px #6af2c0;
+  }
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: 60px;
+}
+li {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.results {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  justify-content: center;
+  text-align: center;
+  button {
+    padding: 20px 10px;
+    background-color: #00b774;
+    border: 0;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: inset 0px -6px 0px #008252;
+    width: 50%;
+    margin:10px auto;
+    &:hover {
+      box-shadow: inset 0px -6px 0px #008252, 2px 2px 6px #036340, -2px -2px 6px #036340;
+    }
+    a {
+      color: white;
+    }
+  }
+}
+.movieInfo {
+  color: white;
+  margin: 20px 0;
+  padding: 20px;
+  // display: flex;
+  p {
+    text-align: left;
+  }
+  img {
+    margin: 2%;
+    max-width: 100%;
+  }
+}
+.slotMachineContainer {
+  background-color: #333;
+  border: 8px solid #000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.jSlots-wrapper {
+  overflow: hidden;
+  height: 60px;
+  display: inline-block;
+  background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
+  border-radius: 8px;
+  box-shadow: inset 0px 0px 10px #333;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+}
+
+@media (max-width: 767px) {
+  form {
+    padding: 5%;
+  }
+  label {
+    width: 46%;
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 540px) {
+  h1 {
+    margin-bottom: 0;
+  }
+  label {
+    font-size: 16px;
+    padding: 6% 4%;
+    margin: 2%;
+  }
+
+  .movieInfo {
+    display: block;
+    margin: 0;
+    padding: 0;
+    p {
+      margin: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  ul {
+    font-size: 26px;
+  }
+  .slotMachineContainer { 
+    padding: 10px;
+  }
+
+}
